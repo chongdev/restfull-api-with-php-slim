@@ -7,6 +7,8 @@ $app = new Slim\App();
 
 $app->get('/', function ($request, $response, $args) {
 
+    // $data = array('data' => "Hello, API", 'message' => 'ss');
+    // $newResponse = $oldResponse->withJson($data);
 
     $response->write("Hello, API");
     return $response;
